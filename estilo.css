@@ -1,12 +1,4 @@
-/* ===== Gol de Placa - CSS de todas as páginas ===== */
 
-/* Cores da loja:
-   Verde Campo   -> #0E7C4A
-   Laranja       -> #FF6A2B
-   Azul Marinho  -> #0B2545
-*/
-
-/* Reset simples */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +11,6 @@ body {
     background-color: #f4f6f8;
 }
 
-/* Títulos usam a fonte Poppins */
 h1, h2, h3 {
     font-family: "Poppins", sans-serif;
 }
@@ -33,12 +24,11 @@ img {
     max-width: 100%;
 }
 
-/* ===== Cabeçalho ===== */
 .cabecalho {
     background-color: #ffffff;
     border-bottom: 2px solid #eef1f4;
     padding: 12px 24px;
-    display: flex;               /* flex é útil aqui para alinhar a barra do topo */
+    display: flex;             
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -70,7 +60,6 @@ img {
     display: block;
 }
 
-/* Menu de navegação */
 .menu {
     list-style: none;
     display: flex;
@@ -88,7 +77,6 @@ img {
     color: #FF6A2B;
 }
 
-/* Barra de busca do topo */
 .busca-topo {
     display: flex;
     gap: 6px;
@@ -101,7 +89,6 @@ img {
     font-family: "Inter", sans-serif;
 }
 
-/* ===== Botões ===== */
 .botao {
     display: inline-block;
     background-color: #FF6A2B;
@@ -126,7 +113,6 @@ img {
     background-color: #0c6b40;
 }
 
-/* ===== Conteúdo geral ===== */
 .conteudo {
     max-width: 1200px;
     margin: 0 auto;
@@ -139,7 +125,6 @@ img {
     font-size: 28px;
 }
 
-/* ===== Banner da página inicial ===== */
 .banner {
     background-color: #0E7C4A;
     color: #ffffff;
@@ -159,7 +144,6 @@ img {
     margin-bottom: 24px;
 }
 
-/* ===== Grade de categorias (3 colunas) ===== */
 .categorias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -167,7 +151,6 @@ img {
     margin-bottom: 40px;
 }
 
-/* Cartão simples */
 .cartao {
     background-color: #ffffff;
     border: 1px solid #dde3e8;
@@ -201,21 +184,18 @@ img {
     margin-bottom: 12px;
 }
 
-/* ===== Grade de produtos (4 colunas) ===== */
 .produtos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 24px;
 }
 
-/* ===== Grade de busca (3 colunas) ===== */
 .resultados {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
 }
 
-/* Barra de busca grande */
 .barra-busca {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -230,7 +210,6 @@ img {
     font-family: "Inter", sans-serif;
 }
 
-/* ===== Benefícios (página inicial) ===== */
 .beneficios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -251,7 +230,6 @@ img {
     margin-bottom: 10px;
 }
 
-/* ===== Página Quem Somos ===== */
 .banner-quem {
     width: 100%;
     height: 340px;
@@ -283,7 +261,6 @@ img {
     line-height: 1.6;
 }
 
-/* Caixinhas de destaque da página Quem Somos */
 .destaques {
     display: grid;
     gap: 16px;
@@ -306,7 +283,6 @@ img {
     font-size: 24px;
 }
 
-/* Missão, visão e valores */
 .mvv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -326,7 +302,6 @@ img {
     margin-bottom: 10px;
 }
 
-/* ===== Página de produto ===== */
 .produto-detalhe {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -381,7 +356,6 @@ img {
     gap: 12px;
 }
 
-/* ===== Formulários (contato e cadastro) ===== */
 .formulario {
     background-color: #ffffff;
     border: 1px solid #dde3e8;
@@ -391,7 +365,6 @@ img {
     margin: 0 auto;
 }
 
-/* Um campo ocupa a linha inteira */
 .campo {
     display: grid;
     margin-bottom: 18px;
@@ -412,14 +385,12 @@ img {
     font-size: 15px;
 }
 
-/* Cadastro com dois campos por linha */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
 }
 
-/* ===== Página de pedidos (carrinho) ===== */
 .carrinho {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -464,7 +435,6 @@ img {
     font-weight: 700;
 }
 
-/* Resumo do pedido */
 .resumo {
     background-color: #ffffff;
     border: 1px solid #dde3e8;
@@ -500,7 +470,6 @@ img {
     margin-bottom: 10px;
 }
 
-/* ===== Rodapé ===== */
 .rodape {
     background-color: #0B2545;
     color: #ffffff;
@@ -551,37 +520,6 @@ img {
     font-size: 13px;
 }
 
-/* ===== Responsivo (telas menores) ===== */
-@media (max-width: 900px) {
-    .produtos {
-        grid-template-columns: 1fr 1fr;
-    }
-    .resultados,
-    .categorias,
-    .beneficios,
-    .mvv {
-        grid-template-columns: 1fr 1fr;
-    }
-    .sobre,
-    .produto-detalhe,
-    .carrinho {
-        grid-template-columns: 1fr;
-    }
-    .rodape-conteudo {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .produtos,
-    .resultados,
-    .categorias,
-    .beneficios,
-    .mvv,
-    .form-grid,
-    .rodape-conteudo {
-        grid-template-columns: 1fr;
-    }
     .item {
         grid-template-columns: 60px 1fr;
     }
